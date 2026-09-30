@@ -62,6 +62,8 @@ for n in range(1, 101):
 print(f"{'N':<10} {'Estimated E[X]'}")
 for n, expected_value in enumerate(expected_values, start=1):
     print(f"{n:<10} {expected_value}")
+
+# ploting the result
 plt.plot(range(1, 101), expected_values)
 plt.xlabel("N")
 plt.ylabel("Estimated E[X]")
