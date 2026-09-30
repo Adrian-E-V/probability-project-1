@@ -59,7 +59,6 @@ for n in range(1, 101):
     for _ in range(large_amount_of_trials):
         total_jumps += individual_outcome(n)
     expected_values.append(total_jumps / large_amount_of_trials)
-    print(f"Finished N={n}", flush=True)
 print(f"{'N':<10} {'Estimated E[X]'}")
 for n, expected_value in enumerate(expected_values, start=1):
     print(f"{n:<10} {expected_value}")
